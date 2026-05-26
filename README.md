@@ -1,6 +1,6 @@
 # Code Analyzer
 
-A comprehensive code analysis tool built with **Java Spring Boot** and **Python FastAPI** that evaluates source code for metrics such as time and space complexity indicators, control structure counts, and overall code quality. It provides structured insights to help students understand performance, maintainability, and potential technical debt.
+A comprehensive code analysis tool built with **Java Spring Boot**, **Python FastAPI**, and modern **web technologies** that evaluates source code for metrics such as time and space complexity indicators, control structure counts, and overall code quality. It provides structured insights to help students understand performance, maintainability, and potential technical debt.
 
 ## 🎯 Features
 
@@ -9,14 +9,25 @@ A comprehensive code analysis tool built with **Java Spring Boot** and **Python 
 - **Quality Assessment**: Provides comprehensive code quality insights
 - **Educational Focus**: Designed to help students understand code performance and maintainability
 - **Technical Debt Detection**: Identifies areas for improvement and refactoring
+- **Interactive UI**: Modern web-based interface for easy visualization
 
 ## 🛠️ Tech Stack
 
 - **Backend**: Java Spring Boot 3.5.10
-- **Alternative Runtime**: Python FastAPI
+- **Analyzer Runtime**: Python FastAPI
+- **Frontend**: HTML, JavaScript (62.8% HTML, 5.6% JavaScript)
 - **Database**: MongoDB
 - **Parser**: JavaParser (for Java code analysis)
 - **Java Version**: 17+
+
+### Language Composition
+```
+HTML          62.8%
+Java          28.1%
+JavaScript     5.6%
+Python         3.4%
+Batchfile      0.1%
+```
 
 ## 📋 Prerequisites
 
@@ -82,6 +93,10 @@ code-analyzer/
 │   ├── main.py               # FastAPI application entry
 │   ├── requirements.txt       # Python dependencies
 │   └── ...
+├── frontend/                   # Web interface (HTML/JavaScript)
+│   ├── index.html            # Main UI
+│   ├── scripts/              # JavaScript files
+│   └── ...
 ├── run-all.bat               # Windows batch script to run all services
 └── README.md                 # This file
 ```
@@ -106,8 +121,9 @@ spring.data.mongodb.database=code-analyzer
 ## 📖 Usage
 
 1. Start all services using `run-all.bat` (Windows) or manually start each service
-2. Submit Java or Python code for analysis through the FastAPI endpoint
-3. View analysis results including:
+2. Access the web interface at the appropriate port
+3. Submit Java or Python code for analysis through the UI or API endpoint
+4. View analysis results including:
    - Time complexity indicators
    - Space complexity indicators
    - Control structure counts
